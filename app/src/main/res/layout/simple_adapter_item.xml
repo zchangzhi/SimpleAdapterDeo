@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/anime_cover_img"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/anime_cover_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/anime_name_txt"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/anime_author_txt"
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/anime_likecolor_img"
+        android:layout_toLeftOf="@+id/anime_checkbox"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anime_checkbox"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
